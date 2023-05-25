@@ -1,0 +1,34 @@
+.menu {
+    background: #44749d;
+    max-width: 10000px;
+    border-radius: 100px;
+}
+
+h1.logo {
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    letter-spacing: -2px;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li a {
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    background: #c6d4e1 ;
+    color: #ffffff;
+    border-radius: 100px;
+}

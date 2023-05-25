@@ -1,0 +1,211 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+/* grid 960px/12 colunas = 80px => padrão mais usado
+  mas precisa de um espaço entre cada coluna, então
+  vamos utilizar 60px
+  */
+.linha {
+  width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 5px 0;
+}
+
+.coluna {
+  padding: 0 5px;
+  /* 10px de espaço entre as colunas. */
+  float: left;
+}
+
+.col1 {
+  width: 60px;
+}
+
+.col2 {
+  width: 140px;
+}
+
+.col3 {
+  width: 220px;
+}
+
+.col4 {
+  width: 300px;
+}
+
+.col5 {
+  width: 380px;
+}
+
+.contatodiv {
+  background-color: #000000;
+  border: 5px;
+  padding: 30px;
+  height: 60%;
+}
+
+.txtsobre {
+  padding: 5px;
+}
+
+.col6 {
+  width: 460px;
+}
+
+.col7 {
+  width: 540px;
+}
+
+.col8 {
+  width: 620px;
+}
+
+.col9 {
+  width: 700px;
+}
+
+.col10 {
+  width: 780px;
+}
+
+.col11 {
+  width: 860px;
+}
+
+.col12 {
+  width: 940px;
+  /* os 20 restantes são do padding dir e esq.*/
+}
+
+/* Estilos reutilizáveis */
+.sem-padding {
+  padding: 0 !important;
+  /* Important: força a utilização de padding 0,
+  no caso, mesmo que outros valores sejam
+  definidos para o mesmo em outro momento*/
+}
+
+.sem-margin {
+  margin: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 3000;
+  /* Peso da fonte: quanto maior o peso, mais
+  "negritada"
+  a fonte será. (observar o link da fonte escolhida
+  no index).*/
+  margin: 15px 0 10px 0;
+}
+
+p {
+  font-weight: 500;
+  margin: 30px 0 30px 0;
+}
+
+ul li,
+ol li {
+  margin-bottom: 15px;
+}
+
+ul.inline li,
+ol.inline li {
+  display: inline;
+  margin-right: 15px;
+}
+
+ul.inline li:last-child,
+ol.inline li:last-child {
+  /* O último elemento da
+  lista não precisa de margem à direita
+  pois pode acabar
+  excedendo o limite de pixels da largura.*/
+  margin-right: 0;
+}
+
+ul.sem-marcador,
+ol.sem-marcador {
+  list-style: none;
+}
+
+a.botao,
+input.botao {
+  background: #1f3c58;
+  color: #ebebeb;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px 0;
+  border: none;
+  transition: 0.3s;
+}
+
+a.botao:hover,
+input.botao:hover {
+  background: #315e8a;
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 35%;
+  /*100% da div onde a img está inserida */
+  max-height: auto;
+}
+
+/* layout do site */
+.menu {
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.contato label {
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.contato input,
+.contato textarea {
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px 2%;
+  width: 96%;
+}
+
+.contato textarea {
+  height: 100px;
+}
+
+.contato input.botao {
+  width: auto;
+}
